@@ -28,7 +28,7 @@ public class Lab4zad4 : MonoBehaviour
         // -mouseYMove aby unikn¹æ ofektu mouse inverse
         rotacja = rotacja - mouseYMove;
         rotacja = Mathf.Clamp(rotacja, -90f, 90f);
-        transform.rotation = Quaternion.Euler(rotacja, 0f, 0f);
+        transform.localRotation = Quaternion.Euler(rotacja,0f,0f);
        
     }
 }
